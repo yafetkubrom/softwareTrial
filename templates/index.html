@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h2>Welcome to Eagle Eats </h2>
+Menu
+  <ul>
+    {% for food in foods %}
+    <li>{{ food }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
